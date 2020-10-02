@@ -1,15 +1,15 @@
-"""
-Dicionários
 
-OBS: São como mapas
-São coleções do tipo chave/valor.
-São representados por {}
+# Dicionários
+#
+# OBS: São como mapas
+# São coleções do tipo chave/valor.
+# São representados por {}
 print(type({}))
 
-OBS:
-1- Chave e valor são separados por dois pontos 'chave:valor'
-2- Tanto chave quanto valor podem ser de qualquer tipo de dado
-3- Podemos misturar tipos de dados
+# OBS:
+# 1- Chave e valor são separados por dois pontos 'chave:valor'
+# 2- Tanto chave quanto valor podem ser de qualquer tipo de dado
+# 3- Podemos misturar tipos de dados
 
 
 # Criação de Dicionários
@@ -105,16 +105,16 @@ del receita['fev'] # Nesse caso o valor removido não é retornado
 print(receita)
 
 
-# Imagine que voce tem um comercio eletrônico, onde temos um carrinho de compras.
-Carrinho de Compras:
-    Produto 1:
-        - nome
-        - quantidade
-        - preço
-    Produto 2:
-        - nome
-        - quantidade
-        - preço
+# # Imagine que voce tem um comercio eletrônico, onde temos um carrinho de compras.
+# Carrinho de Compras:
+#     Produto 1:
+#         - nome
+#         - quantidade
+#         - preço
+#     Produto 2:
+#         - nome
+#         - quantidade
+#         - preço
 
 # 1 - Poderiamos utilizar uma lista? Sim
 print('\nUsando Lista:')
@@ -183,16 +183,17 @@ print(usuario)
 
 # Método fromkeys recebe dois parametros um interavel e um valor
 # Ele vai gerar para cada valor do interavel uma chave e irá atribuir a esta chave o valor informado
-.fromkeys(range(1,11), 'novo')
-"""
-paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
+# .fromkeys(range(1,11), 'novo')
+
+
+# paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
 
 # Métodos de Dicionários
 
-d = dict(a=1, b=2, c=3)
-print(d)
-print(type(d))
-print('')
+# d = dict(a=1, b=2, c=3)
+# print(d)
+# print(type(d))
+# print('')
 
 
 
