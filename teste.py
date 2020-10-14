@@ -1,4 +1,11 @@
+data_index = {
+            "dia": 0,
+            "mes": 1,
+            "ano": 2
+        }
 
-num = 1_000
+listaDeData = ['30', '10', '2010']
 
-print(num)
+funcao = "dia"
+
+print(listaDeData[data_index.get(funcao)])
