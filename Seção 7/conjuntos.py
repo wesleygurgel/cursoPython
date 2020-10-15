@@ -79,12 +79,81 @@ print(simples)
 
 # Remover Elementos
 # Forma 1
-simples.remove(3) # Não é índice
+simples.remove(3) # Não é índice - Não retorna nenhum valor
 print(f'Removendo da Forma1: {simples}')
 
 simples.add(3)
 
 # Forma 2
 simples.discard(3)  # Discard não GERA ERROR caso não seja encontrado.
-print(f'Removendo da Forma2: {simples}')
+print(f'Removendo da Forma2: {simples}\n')
 
+
+
+# Copiando um Conjunto para outro...
+c1 = {1,2,3}
+
+# Forma 1 - Deep Copy
+print('Deep Copy - Não copia para a origem')
+novo = c1.copy()
+print(novo)
+novo.add(4)
+print(novo)
+print(c1)
+
+
+print('\nShallow Copy - Copia para origem')
+novo = c1
+novo.add(4)
+print(novo)
+print(c1)
+
+
+
+# Podemos remover todos os itens de um conjunto
+c1.clear()
+print('\nCLEAR')
+print(c1)
+
+
+
+# Métodos matemáticos de conjuntos
+print('\nMétodos matemáticos de Conjuntos')
+estudantes_python = {'Marcos', 'Patricia', 'Wesley', 'Clara', 'Guilherme', 'Fabiano'}
+estudantes_java = {'Narcos', 'Pedro', 'Wesley', 'Luis', 'André', 'Clara'}
+
+# Gerar conjunto com nomes de estudantes únicos.
+# Forma 1 - Union
+unicos1 = estudantes_python.union(estudantes_java)
+print(f'Usando Uniom {unicos1}')
+
+# Forma 2 - utilizando o pipe |
+unicos2 = estudantes_python | estudantes_java
+print(f'Usando Pipe {unicos2}')
+
+
+print('\nGerar um conjunto de estudantes que estão em ambos os cursos')
+# Forma 1  intersection
+ambos1 = estudantes_python.intersection(estudantes_java)
+print(f'Usando intersection {ambos1}')
+
+# Forma 2 = Utilizando o &
+ambos2 = estudantes_python & estudantes_java
+print(f'Usando & {ambos2}')
+
+
+print('\nGerar um conjunto de estudantes que não estão no outro curso')
+so_python = estudantes_python.difference(estudantes_java)
+print(f'Estudam apenas python: {so_python}')
+
+so_java = estudantes_java.difference(estudantes_python)
+print(f'Estudam apenas java: {so_java}')
+
+
+print('\nSoma, Valor Max, Valor Min, Tamanho.')
+conjuntosvt = {1,2,3,4,5,6,7}
+print(conjuntosvt)
+print(sum(conjuntosvt))
+print(max(conjuntosvt))
+print(min(conjuntosvt))
+print(len(conjuntosvt))
