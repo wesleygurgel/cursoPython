@@ -105,6 +105,10 @@ print(meses[0::2])
 """
 meses = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro')
 
+tupla = (1, 2, 3, 4, 5)
+for n in tupla:
+    print(n)
+
 
 
 
